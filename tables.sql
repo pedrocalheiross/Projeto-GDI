@@ -40,8 +40,7 @@ CREATE TABLE Data_aula(
     CONSTRAINT data_aula_pk PRIMARY KEY (codigo_turma,codigo_disciplina,horario,dia_semana),
     CONSTRAINT data_aula_codigo_turma_fk FOREIGN KEY(codigo_turma,codigo_disciplina) REFERENCES Turma(codigo_turma,codigo_disciplina),
     CONSTRAINT data_aula_codigo_disciplina_fk FOREIGN KEY(codigo_disciplina) REFERENCES Disciplina(codigo_disciplina),
-    CONSTRAINT data_aula_horario_check CHECK (dia_semana IN ('SEGUNDA','TERCA','QUARTA','QUINTA','SEXTA','SABADO','DOMINGO')),
-	CONSTRAINT data_aula_dia_semana_check CHECK (TO_CHAR(horario, 'HH24:MI:SS') BETWEEN '00:00:00' AND '23:59:59')
+    CONSTRAINT data_aula_horario_check CHECK (dia_semana IN ('SEGUNDA','TERCA','QUARTA','QUINTA','SEXTA','SABADO','DOMINGO'))
 );
 
 CREATE TABLE Pessoa(
