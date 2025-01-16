@@ -11,7 +11,7 @@ CREATE TABLE Curso(
 
 CREATE TABLE Disciplina(
     codigo_disciplina INTEGER,
-    nome_disciplina VARCHAR2(20) NOT NULL,
+    nome_disciplina VARCHAR2(50) NOT NULL,
     carga_horaria NUMBER NOT NULL,
     nome_curso VARCHAR2(50) NOT NULL,
     CONSTRAINT disciplina_pk PRIMARY KEY(codigo_disciplina),
