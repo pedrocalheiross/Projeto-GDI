@@ -111,9 +111,7 @@ CREATE TABLE Prova (
     pontuacao NUMBER(4,2),
     codigo_disciplina INTEGER,
     CONSTRAINT prova_codigo_prova_pkey PRIMARY KEY(codigo_prova),
-    CONSTRAINT prova_CPF_aluno_fkey1 FOREIGN KEY (CPF_aluno) REFERENCES Aluno(CPF_aluno),
-    CONSTRAINT prova_codigo_turma_fkey2 FOREIGN KEY (codigo_turma,codigo_disciplina) REFERENCES Turma(codigo_turma,codigo_disciplina),
-    CONSTRAINT prova_codigo_disciplina_fkey3 FOREIGN KEY (codigo_disciplina) REFERENCES Disciplina(codigo_disciplina),
+    CONSTRAINT prova_CPF_aluno_fkey1 FOREIGN KEY (CPF_aluno, codigo_turma,codigo_disciplina) REFERENCES Matricula(CPF_aluno,codigo_turma,codigo_disciplina),
     CONSTRAINT prova_pontuacao_check CHECK (pontuacao BETWEEN 0 AND 10)
 );
 
