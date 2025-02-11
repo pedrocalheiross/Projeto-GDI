@@ -161,13 +161,6 @@ INSERT INTO Prova VALUES(12345, '09786423901', 'T06', 'Prova de Banco de Dados',
 INSERT INTO Prova VALUES(78901, '12345678910', 'T07', 'Prova de Engenharia de Requisitos', 9.5, 7);  
 INSERT INTO Prova VALUES(67890, '23198765432', 'T08', 'Prova de Desenvolvimento Web', 9.8, 8);  
 INSERT INTO Prova VALUES(54321, '09876543219', 'T09', 'Prova de Inteligência Artificial', 9.0, 9);
-INSERT INTO Prova VALUES(86869, '56189023471', 'T01', 'Prova 1 de Introdução à Programaçaõ', 8.5, 1);
-INSERT INTO Prova VALUES(09090, '71028394615', 'T03', 'Prova de Sistemas Digitais', 9.0, 3);
-INSERT INTO Prova VALUES(45678, '68913476523', 'T05', 'Prova de Algoritmos Avançados', 9.2, 5);  
-INSERT INTO Prova VALUES(12345, '09786423901', 'T06', 'Prova de Banco de Dados', 8.7, 6);  
-INSERT INTO Prova VALUES(78901, '12345678910', 'T07', 'Prova de Engenharia de Requisitos', 9.5, 7);  
-INSERT INTO Prova VALUES(67890, '23198765432', 'T08', 'Prova de Desenvolvimento Web', 9.8, 8);  
-INSERT INTO Prova VALUES(54321, '09876543219', 'T09', 'Prova de Inteligência Artificial', 9.0, 9);
 INSERT INTO Prova VALUES(28741, '98723145678', 'T01', 'Prova 1 - Introdução à Programação', 7.5, 1);
 INSERT INTO Prova VALUES(59203, '98723145678', 'T01', 'Prova 2 - Introdução à Programação', 8.5, 1);
 INSERT INTO Prova VALUES(41035, '19283746510', 'T03', 'Prova 1 - Sistemas Digitais', 8.0, 3);
