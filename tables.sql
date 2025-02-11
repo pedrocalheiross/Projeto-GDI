@@ -103,6 +103,16 @@ CREATE TABLE Ensina(
     CONSTRAINT ensina_CPF_professor_fk FOREIGN KEY(CPF_professor) REFERENCES Professor(CPF_professor)
 );
 
+CREATE TABLE Matricula (
+    CPF_aluno CHAR(11),
+    codigo_turma VARCHAR2(10),
+    codigo_disciplina INTEGER,
+    CONSTRAINT matricula_pkey PRIMARY KEY (CPF_aluno,codigo_turma,codigo_disciplina),
+    CONSTRAINT matricula_CPF_aluno_fkey1 FOREIGN KEY (CPF_aluno) REFERENCES Aluno(CPF_aluno),
+    CONSTRAINT matricula_codigo_turma_fkey2 FOREIGN KEY (codigo_turma,codigo_disciplina) REFERENCES Turma(codigo_turma,codigo_disciplina),
+    CONSTRAINT matricula_codigo_disciplina_fkey3 FOREIGN KEY (codigo_disciplina) REFERENCES Disciplina(codigo_disciplina)
+);
+
 CREATE TABLE Prova (
     codigo_prova INTEGER,
     CPF_aluno CHAR(11),
@@ -113,16 +123,6 @@ CREATE TABLE Prova (
     CONSTRAINT prova_codigo_prova_pkey PRIMARY KEY(codigo_prova),
     CONSTRAINT prova_CPF_aluno_fkey1 FOREIGN KEY (CPF_aluno, codigo_turma,codigo_disciplina) REFERENCES Matricula(CPF_aluno,codigo_turma,codigo_disciplina),
     CONSTRAINT prova_pontuacao_check CHECK (pontuacao BETWEEN 0 AND 10)
-);
-
-CREATE TABLE Matricula (
-    CPF_aluno CHAR(11),
-    codigo_turma VARCHAR2(10),
-    codigo_disciplina INTEGER,
-    CONSTRAINT matricula_pkey PRIMARY KEY (CPF_aluno,codigo_turma,codigo_disciplina),
-    CONSTRAINT matricula_CPF_aluno_fkey1 FOREIGN KEY (CPF_aluno) REFERENCES Aluno(CPF_aluno),
-    CONSTRAINT matricula_codigo_turma_fkey2 FOREIGN KEY (codigo_turma,codigo_disciplina) REFERENCES Turma(codigo_turma,codigo_disciplina),
-    CONSTRAINT matricula_codigo_disciplina_fkey3 FOREIGN KEY (codigo_disciplina) REFERENCES Disciplina(codigo_disciplina)
 );
 
 ALTER TABLE Curso ADD(CONSTRAINT curso_CPF_coordenador_fk FOREIGN KEY(CPF_coordenador) REFERENCES Professor(CPF_professor));
