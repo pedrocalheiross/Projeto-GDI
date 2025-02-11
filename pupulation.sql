@@ -156,7 +156,7 @@ INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('09876
 
 INSERT INTO Prova VALUES(86869, '56189023471', 'T01', 'Prova 1 de Introdução à Programaçaõ', 8.5, 1);
 INSERT INTO Prova VALUES(09090, '71028394615', 'T03', 'Prova de Sistemas Digitais', 9.0, 3);
-INSERT INTO Prova VALUES(45678, '68913476523', 'T05', 'Prova de Algoritmos Avançados', 9.2, 5);  
+INSERT INTO Prova VALUES(45678, '68913476523', 'T05', 'Prova de Algoritmos Avançados', 8.6, 5);  
 INSERT INTO Prova VALUES(12345, '09786423901', 'T06', 'Prova de Banco de Dados', 8.7, 6);  
 INSERT INTO Prova VALUES(78901, '12345678910', 'T07', 'Prova de Engenharia de Requisitos', 9.5, 7);  
 INSERT INTO Prova VALUES(67890, '23198765432', 'T08', 'Prova de Desenvolvimento Web', 9.8, 8);  
