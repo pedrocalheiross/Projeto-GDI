@@ -118,10 +118,10 @@ INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_cur
 INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('98765432112', '20260008', 'Ativo', TO_DATE('02-02-2025', 'DD-MM-YYYY'), 'Engenharia Eletrônica');
 INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('19283746510', '20260009', 'Ativo', TO_DATE('03-02-2025', 'DD-MM-YYYY'), 'Sistemas de Informação');
 INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('10293847560', '20260010', 'Ativo', TO_DATE('04-02-2025', 'DD-MM-YYYY'), 'Engenharia de Software');
-INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('56473829100', '20260011', 'Ativo', TO_DATE('05-02-2025', 'DD-MM-YYYY'), 'Desenvolvimento Web');
-INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('12398745609', '20260012', 'Ativo', TO_DATE('06-02-2025', 'DD-MM-YYYY'), 'Banco de Dados');
-INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('97856412311', '20260013', 'Ativo', TO_DATE('07-02-2025', 'DD-MM-YYYY'), 'Segurança da Informação');
-INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('98723145678', '20260014', 'Ativo', TO_DATE('08-02-2025', 'DD-MM-YYYY'), 'Inteligência Artificial');
+INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('56473829100', '20260011', 'Ativo', TO_DATE('05-02-2025', 'DD-MM-YYYY'), 'Engenharia da Computação');
+INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('12398745609', '20260012', 'Ativo', TO_DATE('06-02-2025', 'DD-MM-YYYY'), 'Engenharia da Computação');
+INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('97856412311', '20260013', 'Ativo', TO_DATE('07-02-2025', 'DD-MM-YYYY'), 'Ciência da Computação');
+INSERT INTO Aluno (CPF_aluno, numero_matricula, status, data_matricula, nome_curso) VALUES('98723145678', '20260014', 'Ativo', TO_DATE('08-02-2025', 'DD-MM-YYYY'), 'Ciência da Computação');
 
 INSERT INTO Telefone (telefone, CPF) VALUES('81982374309', '85619370518');
 INSERT INTO Telefone (telefone, CPF) VALUES('81983433337', '32450176829');
