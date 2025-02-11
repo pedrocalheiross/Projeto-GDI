@@ -69,7 +69,8 @@ CREATE TABLE Aluno(
     data_matricula DATE,
     nome_curso VARCHAR2(50),
     CONSTRAINT aluno_pk PRIMARY KEY (CPF_aluno),
-    CONSTRAINT aluno_CPF_aluno_fk FOREIGN KEY (CPF_aluno) REFERENCES Pessoa(CPF)
+    CONSTRAINT aluno_CPF_aluno_fk FOREIGN KEY (CPF_aluno) REFERENCES Pessoa(CPF),
+    CONSTRAINT aluno_nome_curso_fk FOREIGN KEY(nome_curso) REFERENCES Curso(nome_curso)
 );
 
 CREATE TABLE Professor_cargo(
