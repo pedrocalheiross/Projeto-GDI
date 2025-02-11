@@ -144,14 +144,6 @@ INSERT INTO Ensina (predio_sala, num_sala, codigo_turma, codigo_disciplina, hora
 INSERT INTO Ensina (predio_sala, num_sala, codigo_turma, codigo_disciplina, horario_reserva, CPF_professor) VALUES('Prédio D', 'G202', 'T08', 8, TO_DATE('22-01-2025 14:50:00', 'DD-MM-YYYY HH24:MI:SS'), '23198765432');  
 INSERT INTO Ensina (predio_sala, num_sala, codigo_turma, codigo_disciplina, horario_reserva, CPF_professor) VALUES('Prédio E', 'H301', 'T09', 9, TO_DATE('23-01-2025 15:50:00', 'DD-MM-YYYY HH24:MI:SS'), '09876543219');
 
-INSERT INTO Prova VALUES(86869, '56189023471', 'T01', 'Prova 1 de Introdução à Programaçaõ', 8.5, 1);
-INSERT INTO Prova VALUES(09090, '71028394615', 'T03', 'Prova de Sistemas Digitais', 9.0, 3);
-INSERT INTO Prova VALUES(45678, '68913476523', 'T05', 'Prova de Algoritmos Avançados', 9.2, 5);  
-INSERT INTO Prova VALUES(12345, '09786423901', 'T06', 'Prova de Banco de Dados', 8.7, 6);  
-INSERT INTO Prova VALUES(78901, '12345678910', 'T07', 'Prova de Engenharia de Requisitos', 9.5, 7);  
-INSERT INTO Prova VALUES(67890, '23198765432', 'T08', 'Prova de Desenvolvimento Web', 9.8, 8);  
-INSERT INTO Prova VALUES(54321, '09876543219', 'T09', 'Prova de Inteligência Artificial', 9.0, 9);  
-
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('56189023471', 'T01', 1);
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('98723145678', 'T01', 1);
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('19283746510', 'T03', 3);
@@ -161,3 +153,11 @@ INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('09786
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('12345678910', 'T07', 7);  
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('23198765432', 'T08', 8);  
 INSERT INTO Matricula (CPF_aluno, codigo_turma, codigo_disciplina) VALUES('09876543219', 'T09', 9);
+
+INSERT INTO Prova VALUES(86869, '56189023471', 'T01', 'Prova 1 de Introdução à Programaçaõ', 8.5, 1);
+INSERT INTO Prova VALUES(09090, '71028394615', 'T03', 'Prova de Sistemas Digitais', 9.0, 3);
+INSERT INTO Prova VALUES(45678, '68913476523', 'T05', 'Prova de Algoritmos Avançados', 9.2, 5);  
+INSERT INTO Prova VALUES(12345, '09786423901', 'T06', 'Prova de Banco de Dados', 8.7, 6);  
+INSERT INTO Prova VALUES(78901, '12345678910', 'T07', 'Prova de Engenharia de Requisitos', 9.5, 7);  
+INSERT INTO Prova VALUES(67890, '23198765432', 'T08', 'Prova de Desenvolvimento Web', 9.8, 8);  
+INSERT INTO Prova VALUES(54321, '09876543219', 'T09', 'Prova de Inteligência Artificial', 9.0, 9);  
